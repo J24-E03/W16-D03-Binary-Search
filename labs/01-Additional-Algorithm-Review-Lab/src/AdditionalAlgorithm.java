@@ -7,7 +7,6 @@ public class AdditionalAlgorithm {
 
         // Task 2
         System.out.println(checkIfTwoStringsAreAnagrams("anagram", "nagaram"));
-        System.out.println(checkIfTwoStringsAreAnagrams("anagram", "nagaram"));
         System.out.println(checkIfTwoStringsAreAnagrams("rat", "car"));
 
         // Task 3
