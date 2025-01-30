@@ -31,16 +31,16 @@ public class AdditionalAlgorithm {
     }
     //--------Problem 1
     public static boolean checkDuplicate(int[] nums){
-        HashSet<Integer> set = new HashSet<>();
-
-        for (int num : nums) {
-            if (set.contains(num)) {
-                return true;
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (nums[i] == nums[j]) {
+                    return true;
+                }
             }
-            set.add(num);
         }
-
         return false;
+
     }
     //--------Problem 2
     public static boolean isAnagram(String s, String t) {
